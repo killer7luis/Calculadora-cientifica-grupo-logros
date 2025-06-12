@@ -16,8 +16,10 @@ int main(){
     double num1;
     double num2;
     double resultado = 0.0;
-    int menuselect;
+    int menuselect = 11;
 
+
+    while (menuselect != 0){
 
     cout << "SUMA - 1" << endl;
     cout << "RESTA - 2" << endl;
@@ -32,9 +34,8 @@ int main(){
     cout << "Seleccione su operacion: " << endl;
     cin >> menuselect;
 
-    switch (menuselect)
-    {
-    case 1:
+    switch (menuselect){
+        case 1:
         cout << "Introduce el primer numero: ";
         cin >> num1;
         cout << "Introduce el segundo numero: ";
@@ -42,9 +43,9 @@ int main(){
 
         resultado = num1 + num2;
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 2:
+        case 2:
         cout << "Introduce el primer numero: ";
         cin >> num1;
         cout << "Introduce el segundo numero: ";
@@ -52,9 +53,9 @@ int main(){
 
         resultado = num1 - num2;
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 3:
+        case 3:
         cout << "Introduce el primer numero: ";
         cin >> num1;
         cout << "Introduce el segundo numero: ";
@@ -62,9 +63,9 @@ int main(){
 
         resultado = num1 * num2;
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 4:
+        case 4:
         cout << "Introduce el primer numero: ";
         cin >> num1;
         cout << "Introduce el segundo numero: ";
@@ -72,9 +73,9 @@ int main(){
 
         resultado = num1 / num2;
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 5:
+        case 5:
         cout << "Introduce el primer numero: ";
         cin >> num1;
         cout << "Introduce el segundo numero: ";
@@ -82,50 +83,50 @@ int main(){
 
         resultado = pow(num1, num2);
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 6:
+        case 6:
         cout << "Introduce el numero: ";
         cin >> num1;
 
         resultado = sqrt(num1);
 
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 7:
+        case 7:
         cout << "Introduce el numero: ";
         cin >> num1;
 
         resultado = sin (num1*PI/180);
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 8:
+        case 8:
         cout << "Introduce el numero: ";
         cin >> num1;
 
         resultado = cos (num1*PI/180);
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 9:
+        case 9:
         cout << "Introduce el numero: ";
         cin >> num1;
 
         resultado = tan (num1*PI/180);
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    case 10:
+        case 10:
         cout << "Introduce el numero: ";
         cin >> num1;
 
         resultado = log (num1);
         
-        cout << resultado;
+        cout << resultado << "\n";
         break;
-    default:
-        cout << "Nada";
+        default:
         break;
+    }
     }
 }
